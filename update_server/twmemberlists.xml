@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+	<!-- See also https://docs.joomla.org/Deploying_an_Update_Server -->
+	<update>
+		<name>mod_twmemberlists</name>
+		<description>Module to show a list of current members</description>
+		<maintainer>Pierre Veelen</maintainer>
+		<maintainerurl>http://www.pvln.nl</maintainerurl>
+		<element>mod_twmemberlists</element>
+		<type>module</type>
+		<client>0</client>
+		<version>1.0.0</version>
+		<infourl title="This Weeks MemberLists module">http://pvln.nl</infourl>
+		<downloads>
+			<downloadurl type="upgrade" format="zip">http://update.pvln.nl/joomla/modules/thisweeks/memberlists/mod_twmemberlists_v1.0.0.zip</downloadurl>
+		</downloads>
+		<targetplatform name="joomla" version="3" />
+	</update>
+			
+</updates>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- basic information -->
+<extension type="module" version="1.0.0" client="site" method="upgrade">
+    <name>MOD_TWMEMBERLISTS</name>
+    <author>Pierre Veelen</author>
+    <creationDate>February 2018</creationDate>
+    <copyright>Copyright (C) 2018 by Pierre Veelen. All rights reserved.</copyright>
+    <license>GNU General Public License version 2</license>
+    <authorEmail>pierre@pvln.nl</authorEmail>
+    <authorUrl></authorUrl>
+    <version>1.0.0</version>
+    <description>MOD_TWMEMBERLISTS_XML_DESCRIPTION</description>
+    
+<!-- files and folders used by this module -->
+    <files>
+        <filename module="mod_twmemberlists">mod_twmemberlists.php</filename>
+        <filename>mod_twmemberlists.xml</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+        <folder>language</folder>
+    </files>
+    
+<!-- additional fields to be configured in joomla back-end for this module-->  
+    <config>
+	<fields name="params" >
+		<fieldset name="advanced" >
+			<field	name="moduleclass_sfx"
+				type="text"
+				label="Module Class Suffix"
+				description="MOD_TWMEMBERLISTS_CLASS_SUFFIX"
+			/>
+			<field	name="pretext" 
+				type="textarea"
+				label="Pre Text"
+				description="MOD_TWMEMBERLISTS_PRETEXT"
+				cols="30"
+				rows="5"
+			/>
+			<field	name="posttext"
+				type="textarea"
+				label="Post Text"
+				description="MOD_TWMEMBERLISTS_POSTTEXT"
+				cols="30"
+				rows="5"
+			/>
+			<field	name="listtype"
+				type="list"
+				deafult="0"
+				label="List Type"
+				description="MOD_TWMEMBERLISTS_LISTTYPE">
+					<option value="0">Basic list</option>
+					<option value="1">Other</option>
+			</field>
+		</fieldset>
+	</fields>
+    </config>
+	
+<!-- configuration for update servers-->  	
+    <updateservers>
+		<server
+			type="extension"
+			priority="1"
+			name="Show a list of current members">
+			http://update.pvln.nl/joomla/modules/thisweeks/memberlists/twmemberlists.xml
+		</server>
+    </updateservers>
+</extension>
