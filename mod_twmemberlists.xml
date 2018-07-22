@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!-- basic information -->
-<extension type="module" version="1.0.0" client="site" method="upgrade">
+<extension
+    version="3.0"
+	type="module"
+	client="site"
+	method="upgrade">
     <name>MOD_TWMEMBERLISTS</name>
+    <!-- The following metadata elements are optional and free of formatting constraints -->    
     <author>Pierre Veelen</author>
+    <authorEmail>pierre@pvln.nl</authorEmail>
+    <authorUrl>http://www.pvln.nl/this-weeks-memberlist</authorUrl>											 													  
     <creationDate>February 2018</creationDate>
     <copyright>Copyright (C) 2018 by Pierre Veelen. All rights reserved.</copyright>
     <license>GNU General Public License version 2</license>
-    <authorEmail>pierre@pvln.nl</authorEmail>
-    <authorUrl></authorUrl>
-    <version>1.0.0</version>
+
+	<!--  The version string is recorded in the #__extensions table -->    
+	<version>1.0.0</version>
+
+	<!-- The description is optional and defaults to the name; translatable field -->																				  
     <description>MOD_TWMEMBERLISTS_XML_DESCRIPTION</description>
+
+	<!-- the internal name of the component. If omitted, name will be cleaned and used -->
+	<element>twmemberlist</element>
     
-<!-- files and folders used by this module -->
+    <!-- files and folders used by this module -->
     <files>
         <filename module="mod_twmemberlists">mod_twmemberlists.php</filename>
         <filename>mod_twmemberlists.xml</filename>
@@ -22,7 +34,7 @@
         <folder>language</folder>
     </files>
     
-<!-- additional fields to be configured in joomla back-end for this module-->  
+    <!-- additional fields to be configured in joomla back-end for this module-->  
     <config>
 	<fields name="params" >
 		<fieldset name="advanced" >
@@ -63,7 +75,7 @@
 			type="extension"
 			priority="1"
 			name="Show a list of current members">
-			http://update.pvln.nl/joomla/modules/thisweeks/memberlists/twmemberlists.xml
+			http://update.pvln.nl/joomla/modules/thisweeksmemberlists/twmemberlists.xml
 		</server>
     </updateservers>
 </extension>
