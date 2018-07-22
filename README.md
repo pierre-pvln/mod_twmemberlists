@@ -6,5 +6,5 @@ This is an add-on for Community Builder 1.9
 Language files included: en-GB, nl-NL
 
 * Download extension: http://www.pvln.nl/this-weeks-memberlists
-* Update server: http://update.pvln.nl/joomla/modules/thisweeksmemberlists/mod_twmemberlist.xml
+* Update server: http://update.pvln.nl/joomla/modules/thisweeksmemberlists/mod_twmemberlists.xml
 * Joomla Extension Directory: not available yet
