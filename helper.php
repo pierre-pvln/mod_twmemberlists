@@ -6,10 +6,10 @@ defined('_JEXEC') or die;
  * Helper for mod_twbirthdays
  */
 
-abstract class ModTWMemberListsHelper
+abstract class ModThisWeeksMemberListsHelper
 {
     /**
-     * The class ModTWBirthdaysHelper gets a list of Community Builder members who's birthday is in the current week
+     * The class ModThisWeeksBirthdaysHelper gets a list of Community Builder members who's birthday is in the current week
      *
      **/
 	 

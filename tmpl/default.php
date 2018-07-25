@@ -28,7 +28,7 @@
 						  ."&nbsp;&nbsp;&nbsp;";
 				}		
 			endforeach;
-			$birthdayticker = $birthdayticker."<b>".JText::_('MOD_TWMEMBERLISTS_CONGRATS')."</b> ";
+			$birthdayticker = $birthdayticker."<b>".JText::_('MOD_THISWEEKSMEMBERLISTS_CONGRATS')."</b> ";
 			
 			/* ticker text */
 			echo "<marquee scrollamount=".$params->get("tickerscrollamount").">".$birthdayticker." </marquee>";
@@ -50,7 +50,7 @@
 						."</br>" ;	
 				}		
 			endforeach;
-			$birthdaylist = $birthdaylist."<b>".JText::_('MOD_TWMEMBERLISTS_CONGRATS')."</b> ";
+			$birthdaylist = $birthdaylist."<b>".JText::_('MOD_THISWEEKSMEMBERLISTS_CONGRATS')."</b> ";
 			
 			/* list text */
 			echo $birthdaylist;
@@ -59,7 +59,7 @@
 
 	else /* no birthdays found in current week */
 		{
-		echo JText::_('MOD_TWMEMBERLISTS_NO_BIRTHDAYS');
+		echo JText::_('MOD_THISWEEKSMEMBERLISTS_NO_BIRTHDAYS');
 		}	
 ?>
 	

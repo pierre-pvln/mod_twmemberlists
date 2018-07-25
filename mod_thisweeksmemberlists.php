@@ -12,7 +12,7 @@ defined('_JEXEC') or die;
  * 			Not used in this one yet (for future use).
  *
  */
-	$list = ModTWMemberListsHelper::getItems($params);
+	$list = ModThisWeeksMemberListsHelper::getItems($params);
  	
 /**
  * Get layout values from back-end setting tab advanced in $params 
@@ -29,6 +29,6 @@ defined('_JEXEC') or die;
  * Output depends if the layout has not been overridden or not. 
  * 
  */
-	require JModuleHelper::getLayoutpath('mod_twmemberlists', $layout);
+	require JModuleHelper::getLayoutpath('mod_thisweeksmemberlists', $layout);
 	
 ?>
